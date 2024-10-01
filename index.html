@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the NewJeans community. Discover news, albums, and member information.">
+    <meta name="keywords" content="NewJeans, K-pop, community, news, albums, members">
+
+    <title>NewJeans Community</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<header>
+    <div class="nav">
+        <a href="index.html">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/logo.svg?20240621130002" alt="NewJeans JAPAN OFFICIAL SITE" class="logo" />
+        </a>
+        <div class="nav-items">
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i><span>LOGIN</span></a>
+            <a href="join.html"><i class="fa-solid fa-id-badge"></i><span>JOIN</span></a>
+            <a href="cm.html"><i class="fa-solid fa-comments"></i><span>CM</span></a>
+            <a href="profile.html"><i class="fa-solid fa-heart"></i><span>PROFILE</span></a>
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <!-- NewJeans Main Photo 섹션 -->
+    <div class="hero">
+        <img src="img/NewJeans_Main.jpg" alt="Main Image">
+    </div>
+
+    <!-- Member 섹션 -->
+    <div class="main">
+        <div class="title">
+            <h2>Welcome To NewJeans World</h2>
+            <h4>MEMBER</h4>
+        </div>
+        <div class="members">
+            <div class="member" onclick="openModal('Minji')">
+                <img src="img/Minji.jpg" alt="Minji Image">
+                <h2>Minji</h2>
+                <p>Birth: 2004.05.07</p>
+            </div>
+            <div class="member" onclick="openModal('Hanni')">
+                <img src="img/Hanni.jpg" alt="Hanni Image">
+                <h2>Hanni</h2>
+                <p>Birth: 2004.10.06</p>
+            </div>
+            <div class="member" onclick="openModal('Danielle')">
+                <img src="img/Danielle.jpg" alt="Danielle Image">
+                <h2>Danielle</h2>
+                <p>Birth: 2005.04.11</p>
+            </div>
+            <div class="member" onclick="openModal('Haerin')">
+                <img src="img/Haerin.jpg" alt="Haerin Image">
+                <h2>Haerin</h2>
+                <p>Birth: 2006.05.15</p>
+            </div>
+            <div class="member" onclick="openModal('Hyein')">
+                <img src="img/Hyein.jpg" alt="Hyein Image">
+                <h2>Hyein</h2>
+                <p>Birth: 2008.04.21</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal(event)">&times;</span>
+        <img class="modal-content" id="modalImage" onclick="closeModal(event)">
+        <div id="caption" class="modal-description"></div>
+        <div id="description" class="modal-description"></div>
+    </div>    
+
+    <!-- community 섹션 -->
+    <div class="community-section mb-5 pb-5">
+        <h2 class="text-center font-accent mb-4 fadein is-show">COMMUNITY</h2>
+        <div class="post-container my-5 fadein is-show">
+            <div class="post-item">
+                <a href="cm_view.html" class="text-main">
+                    <div class="post-body">
+                        <h4 class="post-title">「NewJeans 24 Birthday Merch. (HANNI)」予約販売決定！</h4>
+                        <div class="post-option">
+                            <span class="post-date">2024.09.23</span> | 
+                            <span class="post-category">RELEASE</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="post-item">
+                <a href="#" class="text-main">
+                    <div class="post-body">
+                        <h4 class="post-title">【MOVIE】更新</h4>
+                        <div class="post-option">
+                            <span class="post-date">2024.09.12</span> | 
+                            <span class="post-category">BUNNIES</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="post-item">
+                <a href="#" class="text-main">
+                    <div class="post-body">
+                        <h4 class="post-title">無料会員サービス終了及びJAPAN OFFICIAL LINE開設のご案内</h4>
+                        <div class="post-option">
+                            <span class="post-date">2024.09.06</span> | 
+                            <span class="post-category">OTHER</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="post-item">
+                <a href="#" class="text-main">
+                    <div class="post-body">
+                        <h4 class="post-title">NewJeans Global Official Fanclub "Bunnies" Membership更新特典変更のお知らせ</h4>
+                        <div class="post-option">
+                            <span class="post-date">2024.08.28</span> | 
+                            <span class="post-category">BUNNIES</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="post-item">
+                <a href="#" class="text-main">
+                    <div class="post-body">
+                        <h4 class="post-title">&lt;TV&gt;『NewJeans Fan Meeting 'Bunnies Camp 2024 Tokyo Dome'』放送決定！</h4>
+                        <div class="post-option">
+                            <span class="post-date">2024.08.10</span> | 
+                            <span class="post-category">MEDIA</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="more text-center font-accent mb-5 fadein is-show">
+            <a href="cm.html" class="more-info-button">MORE INFO</a>
+        </div>
+    </div>
+
+    <!-- Album 섹션 -->
+    <div class="title">
+        <h4>ALBUM</h4>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide album">
+                <img src="img/Newjeans 1st.jpg" alt="1st">
+                <h2>NewJeans 1st EP 'New Jeans'</h2>
+                <p>2022.08.01 Release</p>
+            </div>
+            <div class="swiper-slide album">
+                <img src="img/Newjeans 2st.jpg" alt="2st">
+                <h2>NewJeans 'OMG'</h2>
+                <p>2023.01.02 Release</p>
+            </div>
+            <div class="swiper-slide album">
+                <img src="img/Newjeans 3st.jpg" alt="3st">
+                <h2>NewJeans 2nd EP 'Get Up'</h2>
+                <p>2023.07.21 Release</p>
+            </div>
+            <div class="swiper-slide album">
+                <img src="img/Newjeans 4st.jpg" alt="4st">
+                <h2>NewJeans 'How Sweet'</h2>
+                <p>2024.05.24 Release</p>
+            </div>
+            <div class="swiper-slide album">
+                <img src="img/Newjeans 5st.jpg" alt="5st">
+                <h2>NewJeans 'Supernatural'</h2>
+                <p>2024.06.21 Release</p>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- 페이지네이션 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com/newjeans_official/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com/NewJeans_jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_x.svg?20231221122721" alt="X（旧Twitter）"></a></li>
+        <li><a href="https://phoning.onelink.me/KG15/yydnmivy" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_phoning.svg" alt="Project P"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_youtube.svg" alt="YouTube"></a></li>
+        <li><a href="https://page.line.me/newjeans-jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_line.svg?20240905161915" alt="JAPAN OFFICIAL LINE"></a></li>
+        <li><a href="https://newjeans.kr/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_nj.svg" alt="NewJeans kr web"></a></li>
+        <li><a href="https://ador.world/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_ador.svg" alt="adr kr web"></a></li>
+        <li><a href="https://weverse.io/newjeansofficial/feed" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_weverse.svg" alt="Weverse"></a></li>
+    </ul>
+
+   <!-- Swiper JS -->  
+    <script src="script.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+
+<footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="/pages/agreement">会員規約</a></li>
+            <li><a href="/pages/sitepolicy">サイトポリシー</a></li>
+            <li><a href="/pages/privacypolicy">プライバシーポリシー</a></li>
+        </ul>
+        <div class="copy">© 2024 ADOR. All Rights Reserved.<br>Powered by ROM SHARING</div>
+    </div>
+</footer>
+</html>

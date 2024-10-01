@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN | NewJeans Community</title>
+    <link href="css/join.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<header>
+    <div class="nav">
+        <a href="index.html">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/logo.svg?20240621130002" alt="NewJeans JAPAN OFFICIAL SITE" class="logo" />
+        </a>
+        <div class="nav-items">
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i><span>LOGIN</span></a>
+            <a href="join.html"><i class="fa-solid fa-id-badge"></i><span>JOIN</span></a>
+            <a href="cm.html"><i class="fa-solid fa-comments"></i><span>CM</span></a>
+            <a href="profile.html"><i class="fa-solid fa-heart"></i><span>PROFILE</span></a>
+        </div>
+    </div>
+</header>
+
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="join-frame" style="margin-top: 30px;">
+                <img src="img/joinimg.jpeg" alt="joinimg" class="background">
+                <div class="join-container">
+                    <h1 class="pb-4 text-center">会員登録</h1>
+                    <form name="Member">
+                        <div class="input-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="t_name">
+                        </div>
+                        <div class="input-group">
+                            <label for="id">アカウント</label>
+                            <input type="text" id="id" name="t_id">
+                            <button type="button" id="checkDuplicate">重複確認</button>
+                            <span id="duplicateMessage" style="color: red;"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">パスワード</label>
+                            <input type="password" id="password" name="t_ps">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm-password">パスワード確認</label>
+                            <input type="password" id="confirm-password" name="t_ps_confirm">
+                        </div>
+                        <div class="input-group">
+                            <label for="mobile">連絡先</label>
+                            <input type="text" id="mobile1" name="t_mobile_1" placeholder="010"> -
+                            <input type="text" id="mobile2" name="t_mobile_2" placeholder="1111"> -
+                            <input type="text" id="mobile3" name="t_mobile_3" placeholder="2222">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="text" id="email1" name="t_email_1"> @
+                            <input type="text" id="email2" name="t_email_2" placeholder="naver.com。" >
+                        </div>
+                        <button type="submit">登録</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com/newjeans_official/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com/NewJeans_jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_x.svg?20231221122721" alt="X（旧Twitter）"></a></li>
+        <li><a href="https://phoning.onelink.me/KG15/yydnmivy" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_phoning.svg" alt="Project P"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_youtube.svg" alt="YouTube"></a></li>
+        <li><a href="https://page.line.me/newjeans-jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_line.svg?20240905161915" alt="JAPAN OFFICIAL LINE"></a></li>
+        <li><a href="https://newjeans.kr/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_nj.svg" alt="NewJeans kr web"></a></li>
+        <li><a href="https://ador.world/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_ador.svg" alt="ador kr web"></a></li>
+        <li><a href="https://weverse.io/newjeansofficial/feed" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_weverse.svg" alt="Weverse"></a></li>
+    </ul>
+
+</body>
+<script src="script.js"></script>
+
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="/pages/agreement">会員規約</a></li>
+                <li><a href="/pages/sitepolicy">サイトポリシー</a></li>
+                <li><a href="/pages/privacypolicy">プライバシーポリシー</a></li>
+            </ul>
+            <div class="copy">© 2024 ADOR. All Rights Reserved.<br>Powered by ROM SHARING</div>
+        </div>
+    </footer>
+</html>

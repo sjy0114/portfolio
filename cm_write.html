@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the NewJeans community. Discover news, albums, and member information.">
+    <meta name="keywords" content="NewJeans, K-pop, community, news, albums, members">
+
+    <title>COMMUNITY Write | NewJeans Community</title>
+    <link href="css/cm_write.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<header>
+    <div class="nav">
+        <a href="index.html">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/logo.svg?20240621130002" alt="NewJeans JAPAN OFFICIAL SITE" class="logo" />
+        </a>
+        <div class="nav-items">
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i><span>LOGIN</span></a>
+            <a href="join.html"><i class="fa-solid fa-id-badge"></i><span>JOIN</span></a>
+            <a href="cm.html"><i class="fa-solid fa-comments"></i><span>CM</span></a>
+            <a href="profile.html"><i class="fa-solid fa-heart"></i><span>PROFILE</span></a>
+        </div>
+    </div>
+</header>
+
+
+<body>
+
+    <div class="write-container">
+        <img src="img/cm_newjeans.jpg" alt="Descriptive Alt Text" class="body-header-image">
+        <div class="write_wrap">
+            <h2 class="sr-only">community Write</h2>
+            <form name="cm" onsubmit="return validateForm()">
+                <table class="bord_table">
+                    <caption class="sr-only">community Write</caption>
+                    <colgroup>
+                        <col width="20%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr class="first">
+                            <th>作成者</th>
+                            <td><input type="text" name="t_id"  readonly></td>
+                        </tr>
+                        <tr>
+                            <th>タイトル</th>
+                            <td><input type="text" name="t_title"  placeholder="タイトルを入力してください。"></td> <!-- タイトル 입력 안내 -->
+                        </tr>
+                        <tr>
+                            <th>内容</th>
+                            <td><textarea name="contents"  placeholder="内容を入力してください。"></textarea></td> <!-- 内容 입력 안내 -->
+                        </tr>
+                        <tr>
+                            <th>添付</th>
+                            <td><input type="file" name="t_photo" accept="image/*, .pdf"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_wrap">
+                    <input type="submit" value="登録" class="btn_ok">
+                    <input type="reset" value="書き込み" class="btn_reset"> <!-- 변경된 부분 -->
+                    <input type="button" value="一覧" class="btn_list" onClick="location.href='cm.html';"> <!-- 변경된 부분 -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com/newjeans_official/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com/NewJeans_jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_x.svg?20231221122721" alt="X（旧Twitter）"></a></li>
+        <li><a href="https://phoning.onelink.me/KG15/yydnmivy" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_phoning.svg" alt="Project P"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_youtube.svg" alt="YouTube"></a></li>
+        <li><a href="https://page.line.me/newjeans-jp" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_line.svg?20240905161915" alt="JAPAN OFFICIAL LINE"></a></li>
+        <li><a href="https://newjeans.kr/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_nj.svg" alt="NewJeans kr wev"></a></li>
+        <li><a href="https://ador.world/" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_ador.svg" alt="adr kr wev"></a></li>
+        <li><a href="https://weverse.io/newjeansofficial/feed" target="_blank" rel="noopener"><img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/148/assets/229/images/top/icon_weverse.svg" alt="Weverse"></a></li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+
+
+<footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="/pages/agreement">会員規約</a></li>
+            <li><a href="/pages/sitepolicy">サイトポリシー</a></li>
+            <li><a href="/pages/privacypolicy">プライバシーポリシー</a></li>
+        </ul>
+        <div class="copy">© 2024 ADOR. All Rights Reserved.<br>Powered by ROM SHARING</div>
+    </div>
+</footer>
+</html>
