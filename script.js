@@ -52,48 +52,7 @@ function goLogin() {
 
 
 //join
-document.getElementById('checkDuplicate').addEventListener('click', function() {
-    const id = document.getElementById('id').value;
-    const message = document.getElementById('duplicateMessage'); 
-    const existingIds = ["existingUser1", "existingUser2"]; // Add your existing IDs here
 
-    if (existingIds.includes(id)) {
-        message.textContent = 'このアカウントはすでに存在します。';
-    } else {
-        message.textContent = 'このアカウントは利用可能です。';
-    }
-});
-
-document.querySelector('form').addEventListener('submit', function(event) {
-    const email = document.getElementById('email1').value + '@' + document.getElementById('email2').value;
-    const mobile1 = document.getElementById('mobile1').value;
-    const mobile2 = document.getElementById('mobile2').value;
-    const mobile3 = document.getElementById('mobile3').value;
-    const message = document.getElementById('duplicateMessage'); 
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
-    const mobilePattern = /^\d{3}-\d{4}-\d{4}$/; // Mobile format "xxx-xxxx-xxxx"
-
-    if (!emailPattern.test(email)) {
-        event.preventDefault();
-        message.textContent = '正しいメールアドレスを入力してください。';
-        return;
-    }
-
-    if (!mobilePattern.test(`${mobile1}-${mobile2}-${mobile3}`)) {
-        event.preventDefault();
-        message.textContent = '正しい連絡先を入力してください。';
-        return;
-    }
-
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
-    if (password !== confirmPassword) {
-        event.preventDefault();
-        message.textContent = 'パスワードが一致しません。';
-        return;
-    }
-});
 
 
 // cm

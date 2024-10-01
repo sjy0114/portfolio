@@ -1,0 +1,4 @@
+# 무시할 파일 예시
+*.erd    # 모든 .erd 파일 무시
+node_modules/  # node_modules 폴더 무시
+*.log    # 모든 로그 파일 무시

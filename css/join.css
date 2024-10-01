@@ -95,11 +95,11 @@ h1 {
 }
 
 .input-group #mobile {
-    width: 54px;
+    width: 90px;
 }
 
- .input-group #email {
-    width: 54px;
+ .input-group input[type="email"] {
+    width: 96px;
 }
 
 button {
